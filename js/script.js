@@ -36,3 +36,22 @@ while (isNaN(km)){
 
 var infoKm = "Km: " + km;
 document.getElementById("html-km").innerHTML = infoKm;
+
+//prezzo biglietto
+var price = (0.21 * km).toFixed(2);
+var infoPrice = "Il prezzo senza sconto è " + price;
+document.getElementById("html-price").innerHTML = infoPrice;
+
+//sconto
+var infoPriceDiscount = "Il prezzo scontato è " + price;
+var noDiscount = "Non ha diritto ad alcuno sconto";
+
+if (infoAge = min){
+  price = (price * 0.8).toFixed(2);
+  document.getElementById("html-price-discount").innerHTML = infoPriceDiscount;
+} else if (infoAge = max){
+  price = (price * 0.6).toFixed(2);
+  document.getElementById("html-price-discount").innerHTML = infoPriceDiscount;
+} else {
+  document.getElementById("html-price-discount").innerHTML = noDiscount;
+}
