@@ -20,3 +20,19 @@ if (age < 18) {
   infoAge = standard = ""
 }
 document.getElementById("html-age").innerHTML = infoAge;
+
+
+// destinazione
+var city = prompt("Dove vuole andare?");
+var infoCity = "Destinazione: " + city;
+document.getElementById("html-city").innerHTML = infoCity;
+
+// numero km
+var km
+  km = parseInt(prompt("Quanti km sono?"))
+while (isNaN(km)){
+  km = prompt("Ops, hai sbagliato qualcosa! Riprova");
+}
+
+var infoKm = "Km: " + km;
+document.getElementById("html-km").innerHTML = infoKm;
